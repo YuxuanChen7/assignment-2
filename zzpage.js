@@ -28,3 +28,18 @@ const displaySomeResult = () => {
     const somedValue = mySome(originalArray, (value, index, array) => value > 2);
     document.querySelector('#result-div-some').innerText = 'Somed Result: ' + somedValue;
 };
+
+const myEvery = (array, callback) => {
+    for (let i = 0; i < array.length; i++) {
+        if (!(callback(array[i], i, array))) {
+            return false;
+        }
+    }
+    return true;
+};
+
+const displayEveryResult = () => {
+    const originalArray = [1, 2, 3, 4, 5];
+    const everyedValue = myEvery(originalArray, (value, index, array) => value > 2);
+    document.querySelector('#result-div-every').innerText = 'Everyed Result: ' + everyedValue;
+};
