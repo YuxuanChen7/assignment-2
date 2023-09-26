@@ -7,10 +7,11 @@ function myReduce(array) {
 }
 
 const listforreduce = [1, 2, 3, 4, 5];
-document.getElementById('showmyReduce').addEventListener("click", () => {
+const reduce = document.body.querySelector("#showmyReduce");
+reduce.addEventListener("click", () => {
   const result = myReduce(listforreduce);
 
-  const resultfound = document.getElementById('resultforreduce');
+  const resultfound = document.body.querySelector("#resultforreduce");
 
   resultfound.textContent = "answer: " +  result;
 });
