@@ -1,55 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Yuxuan's Page</title>
-    </head>
-    <body>
+  <head>
+    <title>Yuxuan's Page</title>
+  </head>
+  <body>
+    <h1>myReduce</h1>
+    <div>Function: It sums up the items in the array</div>
+    <div>Input Array: [1,2,3,4,5]</div>
+    <div id="resultforreduce"></div>
+    <button type="button" id="showmyReduce">Run myReduce</button>
 
-        <h1>myReduce</h1>
-        <div> Function: It sums up the items in the array</div>
-        <div> Input Array: [1,2,3,4,5]</div>
-        <div id="resultforreduce"> </div>
-        <button type="button" id = "showmyReduce">Run myReduce</button>
+    <h1>myIncludes</h1>
+    <div>
+      Function: It check to see whether or not the array contains the parameter
+    </div>
+    <div>Input Array: [1,2,3,4,5,6,7,8,9,10,11,12,13]</div>
+    <form>
+      <label> Enter Element that you want to check: </label>
+      <input id="numitem" required />
+      <button type="button" id="showmyIncludesnum">Run myIncludes</button>
+    </form>
+    <div id="resultfornum"></div>
 
-        <h1>myIncludes</h1>
-        <div> Function: It check to see whether or not the array contains the parameter </div>
-        <div> Input Array: [1,2,3,4,5,6,7,8,9,10,11,12,13]</div>
-        <form> 
-            <label> Enter Element that you want to check: </label>
-            <input id="numitem" required>
-            <button type="button" id = "showmyIncludesnum">Run myIncludes</button>
-        </form>
-        <div id="resultfornum"> </div>
+    <div>Input Array: [cat,dog,seal,rat,pig]</div>
+    <form>
+      <label> Enter Element that you want to check: </label>
+      <input id="textitem" required />
+      <button type="button" id="showmyIncludestext">Run myIncludes</button>
+    </form>
+    <div id="resultfortext"></div>
 
-        <div> Input Array: [cat,dog,seal,rat,pig]</div>
-        <form> 
-            <label> Enter Element that you want to check: </label>
-            <input id="textitem" required>
-            <button type="button" id = "showmyIncludestext">Run myIncludes</button>
-        </form>
-        <div id="resultfortext"></div>
+    <h1>myIndexOf</h1>
+    <div>
+      Function: it returns the first index at the array where item can be found
+      or -1 if it is not in the array.
+    </div>
+    <div>Input Array: [1,2,3,4,5,6,7,8,9,10,11,12,13]</div>
 
-        <h1>myIndexOf</h1>
-        <div> Function:  it returns the first index at the array where item can be found or -1 if it is not in the array. </div>
-        <div> Input Array: [1,2,3,4,5,6,7,8,9,10,11,12,13]</div>
+    <form>
+      <label> Enter Element that you want to check: </label>
+      <input id="targetindexof" required />
+      <button type="button" id="showmyindexoftarget">Run myIndexOf</button>
+    </form>
+    <div id="resultmyindexoffirst"></div>
 
-        <form> 
-            <label> Enter Element that you want to check: </label>
-            <input id="targetindexof" required>
-            <button type="button" id = "showmyindexoftarget">Run myIndexOf</button>
-        </form>
-        <div id="resultmyindexoffirst"></div>
-
-        <div> Input Array: [1,2,3,4,5,6,7,8,9,10,11,12,13]</div>
-        <form> 
-            <label> Enter Element that you want to check: </label>
-            <input id="secondtarget" required>
-        </form>
-        <form> 
-            <label> Enter start that you want to start with: </label>
-            <input id="secondstart" required>
-            <button type="button" id = "showmyindexofstart">Run myIndexOf</button>
-        </form>
-        <div id="resultmyindexofsecond"></div>
-    </body>
+    <div>Input Array: [1,2,3,4,5,6,7,8,9,10,11,12,13]</div>
+    <form>
+      <label> Enter Element that you want to check: </label>
+      <input id="secondtarget" required />
+    </form>
+    <form>
+      <label> Enter start that you want to start with: </label>
+      <input id="secondstart" required />
+      <button type="button" id="showmyindexofstart">Run myIndexOf</button>
+    </form>
+    <div id="resultmyindexofsecond"></div>
+  </body>
 </html>
