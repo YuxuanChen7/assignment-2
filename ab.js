@@ -15,3 +15,20 @@ function myEach(array) {
   
     resultfound.textContent = "answer: " +  result;
     });
+
+
+    const myMap = (array, callback) => {
+        let x = [];
+        for (let i = 0; i < array.length; i++) {
+            if (callback(array[i], i, array)) {
+                x.push(array[i]);
+            }
+        }
+        return x;
+    };
+    
+    const displayMapResult = () => {
+        const originalArray = [1, 2, 3, 4, 5];
+        const map = myMap(originalArray, (value, index, array) => value /2 );
+        document.querySelector('#result-div-map').innerText = 'Map: ' + map.toString();
+    };
