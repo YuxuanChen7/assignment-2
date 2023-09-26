@@ -7,10 +7,10 @@ function myReduce(array) {
 }
 
 const listforreduce = [1, 2, 3, 4, 5];
-document.getElementById("showmyReduce").addEventListener("click", () => {
+document.getElementById('showmyReduce').addEventListener("click", () => {
   const result = myReduce(listforreduce);
 
-  const resultfound = document.getElementById("resultforreduce");
+  const resultfound = document.getElementById('resultforreduce');
 
   resultfound.textContent = result;
 });
@@ -25,8 +25,8 @@ function myIncludes(array, target) {
 }
 
 const listforindex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-document.getElementById("showmyIncludesnum").addEventListener("click", () => {
-  const itemcheck = document.getElementById("numitem").value;
+document.getElementById('showmyIncludesnum').addEventListener("click", () => {
+  const itemcheck = document.getElementById('numitem').value;
 
   const itemNumber = parseInt(
     itemcheck,
@@ -35,7 +35,7 @@ document.getElementById("showmyIncludesnum").addEventListener("click", () => {
 
   const result = myIncludes(listforindex, itemNumber);
 
-  const resultfound = document.getElementById("resultfornum");
+  const resultfound = document.getElementById('resultfornum');
   if (result) {
     resultfound.textContent = `${itemNumber} exists`;
   } else {
@@ -44,12 +44,12 @@ document.getElementById("showmyIncludesnum").addEventListener("click", () => {
 });
 
 const listforindextext = ["cat", "dog", "seal", "rat", "pig"];
-document.getElementById("showmyIncludestext").addEventListener("click", () => {
-  const itemcheck = document.getElementById("textitem").value;
+document.getElementById('showmyIncludestext').addEventListener("click", () => {
+  const itemcheck = document.getElementById('textitem').value;
 
   const result = myIncludes(listforindextext, itemcheck);
 
-  const resultfound = document.getElementById("resultfortext");
+  const resultfound = document.getElementById('resultfortext');
   if (result) {
     resultfound.textContent = `${itemcheck} exists`;
   } else {
@@ -66,8 +66,8 @@ function myIndexOf(array, target, start = 0) {
   return -1;
 }
 const listforindexof = [1, 2, 3, 4, 5, 6, 7, 5, 8, 9, 10, 11, 12, 13];
-document.getElementById("showmyindexoftarget").addEventListener("click", () => {
-  const myindexofitem = document.getElementById("targetindexof").value;
+document.getElementById('showmyindexoftarget').addEventListener("click", () => {
+  const myindexofitem = document.getElementById('targetindexof').value;
 
   const targetNumber = parseInt(
     myindexofitem,
@@ -76,15 +76,15 @@ document.getElementById("showmyindexoftarget").addEventListener("click", () => {
 
   const result = myIndexOf(listforindexof, targetNumber);
 
-  const resultfound = document.getElementById("resultmyindexoffirst");
+  const resultfound = document.getElementById('resultmyindexoffirst');
 
   resultfound.textContent = result;
 });
 
-document.getElementById("showmyindexofstart").addEventListener("click", () => {
-  const myindexoftarget = document.getElementById("secondtarget").value;
+document.getElementById('showmyindexofstart').addEventListener("click", () => {
+  const myindexoftarget = document.getElementById('secondtarget').value;
 
-  const myindexofstart = document.getElementById("secondstart").value;
+  const myindexofstart = document.getElementById('secondstart').value;
 
   const targetNumbertarget = parseInt(
     myindexoftarget,
