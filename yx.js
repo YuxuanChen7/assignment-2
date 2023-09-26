@@ -12,7 +12,7 @@ document.getElementById('showmyReduce').addEventListener("click", () => {
 
   const resultfound = document.getElementById('resultforreduce');
 
-  resultfound.textContent = result;
+  resultfound.textContent = "answer: " result;
 });
 
 function myIncludes(array, target) {
